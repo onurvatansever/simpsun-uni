@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff5e6;
+}
+
+/* Navigation Bar */
+.navbar {
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #c41e1e;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo h1 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.navbar .motto {
+    font-size: 0.9em;
+    font-style: italic;
+    color: #333;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #c41e1e;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 40px;
+    background: linear-gradient(135deg, #c41e1e 0%, #FFD700 100%);
+    color: white;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #c41e1e;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Page Title */
+.page-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #c41e1e;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+/* Features Section */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 60px 0;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-top: 5px solid #c41e1e;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    color: #c41e1e;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Welcome Section */
+.welcome-section {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 40px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #FFD700;
+}
+
+.welcome-section h2 {
+    color: #c41e1e;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.welcome-section p {
+    color: #555;
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+
+/* Departments Grid */
+.departments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.department-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 3px solid #FFD700;
+}
+
+.department-card:hover {
+    transform: translateY(-5px) rotateY(2deg);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border-color: #c41e1e;
+}
+
+.dept-icon {
+    font-size: 3.5em;
+    margin-bottom: 15px;
+}
+
+.department-card h3 {
+    color: #c41e1e;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+.dept-code {
+    color: #FF6B6B;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.department-card p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+/* Professors Grid */
+.professors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.professor-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-top: 5px solid #c41e1e;
+}
+
+.professor-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.professor-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    background-color: #f0f0f0;
+}
+
+.professor-card h3 {
+    color: #c41e1e;
+    padding: 20px 20px 0 20px;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.prof-title {
+    color: #FFD700;
+    font-weight: bold;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+
+.prof-bio {
+    color: #555;
+    padding: 0 20px;
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.prof-email {
+    color: #666;
+    padding: 0 20px 20px 20px;
+    font-size: 0.9em;
+}
+
+/* Announcements */
+.announcements-list {
+    margin: 40px 0;
+}
+
+.announcement {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    transition: all 0.3s ease;
+    border-left: 5px solid #c41e1e;
+}
+
+.announcement:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transform: translateX(5px);
+}
+
+.announcement-date {
+    background: linear-gradient(135deg, #c41e1e 0%, #FF6B6B 100%);
+    color: white;
+    padding: 30px 20px;
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+.announcement-content {
+    padding: 30px;
+    flex: 1;
+}
+
+.announcement-content h3 {
+    color: #c41e1e;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+.announcement-content p {
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+.announcement-location {
+    color: #FFD700;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #333 0%, #666 100%);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+footer p:first-child {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 0.9em;
+        padding: 5px 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8em;
+    }
+
+    .hero-image {
+        margin-top: 30px;
+        max-width: 100%;
+    }
+
+    .page-title {
+        font-size: 1.8em;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .departments-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .professors-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .announcement {
+        flex-direction: column;
+    }
+
+    .announcement-date {
+        min-width: auto;
+        padding: 20px;
+    }
+
+    .navbar .logo h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .logo h1 {
+        font-size: 1.2em;
+    }
+
+    .nav-links {
+        gap: 10px;
+        font-size: 0.8em;
+    }
+
+    .hero-content h2 {
+        font-size: 1.4em;
+    }
+
+    .page-title {
+        font-size: 1.5em;
+    }
+
+    .welcome-section,
+    .announcement-content {
+        padding: 20px;
+    }
+}
